@@ -1,0 +1,8 @@
+https://blog.csdn.net/hugh77/article/details/43819665?locationNum=7&fps=1
+
+https://blog.csdn.net/qq_34845382/article/details/53885907
+
+intellij 15把第三方jar打入jar包方式:
+project structure 中 artifact 添加jar包时选择 from modules with dependencies, 在JAR files from labraries 选项中选择 extract to the target JAR,
+在available elements 下右键进行 put into output root，这时会将第三方jar包打入目标jar包中,并且会在META-INF文件夹中生成最为重要的MANIFEST.MF文件,该文件
+将决定jar包的所有依赖及运行的主类
