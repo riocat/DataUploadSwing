@@ -82,7 +82,9 @@ public class SwingDemo {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("数据补传");
-        frame.setContentPane(new SwingDemo().panel1);
+        SwingDemo sd = new SwingDemo();
+        // 通过sd即可得到form上所有控件的对象
+        frame.setContentPane(sd.panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
